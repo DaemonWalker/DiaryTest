@@ -23,6 +23,7 @@ namespace DiaryTest.Controllers
         public IActionResult Index(string id)
         {
             ViewBag.Title = id;
+            ViewBag.Description = "今天小编来给大家介绍一下" + id;
             return View();
         }
     }
